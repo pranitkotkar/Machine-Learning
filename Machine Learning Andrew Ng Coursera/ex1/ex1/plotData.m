@@ -16,16 +16,9 @@ figure; % open a new figure window
 %       appear as red crosses. Furthermore, you can make the
 %       markers larger by using plot(..., 'rx', 'MarkerSize', 10);
 
-% This opens a new figure window
-figure;
-%plot the data
-plot(x, y, "rx", "MarkerSize", 10);
-%setting the axis
-axis([4 24 -5 25]);
-% setting the x label as population
-xlabel("Population of City in 10,000s"); 
-% setting the y label
-ylabel("Profit in $10,000s"); 
+plot(x, y, 'rx', 'MarkerSize', 10); % Plot the data
+ylabel('Profit in $10,000s'); % Set the y-axis label
+xlabel('Population of City in 10,000s'); % Set the x-axis label
 
 
 

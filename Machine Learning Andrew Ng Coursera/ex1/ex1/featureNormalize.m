@@ -25,16 +25,11 @@ sigma = zeros(1, size(X, 2));
 %
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
-mu = mean(X)
-sigma = std(X)
+sigma = std(X);
 
-%iteratively compute X_norm
-%size(X,2) gives you number of columns in X
-for i = 1:size(X,2)
-    X_norm(:,i:i) = ((X(:,i:i) - mu(:,i:i))/sigma(:,i:i));
-end
+mu = mean(X);
 
-
+X_norm = (X - mu) ./ sigma;
 
 
 
